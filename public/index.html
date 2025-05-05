@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb Defusal Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Bomb Defusal Challenge</h1>
+    </div>
+    <div id="timer">Time left: 50:00</div>
+    <div class="container">
+        <div id="pin-box">
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit"> 
+            <input type="text" maxlength="1" class="digit">  
+            <input type="text" maxlength="1" class="digit">   
+        </div>
+        <button id="start">Start</button>
+        <div id="game-buttons" style="display: none;">
+            <button id="submit">Disable</button>
+            <button id="clear">Clear</button>
+        </div>
+        <button id="restart" style="display: none;">Restart</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>

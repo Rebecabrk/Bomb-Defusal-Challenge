@@ -1,0 +1,87 @@
+body {
+    font-family: 'Courier New', monospace;
+    background: #1E1E2E;
+    color: #FF2E63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#timer {
+    font-size: 2rem;
+    color: #8AC926;
+    transition: color 0.5s ease;
+}
+
+#pin-box {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.digit{
+    width: 40px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #FF2E63;
+    border-radius: 10px;
+}
+
+.digit:focus {
+    border-color: 2px solid #FF2E63;
+    box-shadow: 0 0px 15px #FF2E63;
+}
+
+button {
+    margin-top: 20%;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    border: 2px solid #FF2E63;
+    border-radius: 10px;
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(5px);}
+    75% {transform: translateX(-5px);}
+}
+
+.explosion {
+    animation: explosion 1s 5;
+    background-color: red;
+}
+
+@keyframes explosion {
+    0% { background-color: red; }
+    50% { background-color: darkred; }
+    100% { background-color: red; }
+}
+
