@@ -15,7 +15,7 @@ const lastMinuteSound = new Audio("sounds/lastMinute.wav");
 const gameOverSound = new Audio('sounds/gameOver.wav');
 const explosionSound = new Audio('sounds/explosion.wav');
 
-let timeLeft = 50 * 60;
+// let timeLeft = 30 * 60;
 const totalTime = timeLeft;
 const timerDisplay = document.getElementById("timer");
 let timerInterval;
@@ -104,7 +104,7 @@ document.getElementById("clear").addEventListener("click", () => {
 });
 
 document.getElementById("start").addEventListener("click", () => {
-    startTimer();
+    // startTimer();
 
     document.getElementById("start").style.display = "none";
     document.getElementById("game-buttons").style.display = "block";

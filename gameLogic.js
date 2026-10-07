@@ -1,5 +1,5 @@
-const MAX_ROUNDS = 3;
-const correctCodes = ['1234567890', '5678901234', '9012345678'];
+const MAX_ROUNDS = 1;
+const correctCodes = ['79118641'];
 
 let currentRound = 0;
 
